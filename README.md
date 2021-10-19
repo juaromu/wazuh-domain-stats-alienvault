@@ -343,7 +343,7 @@ In the windows agents, we need to create the files “otx.cmd” (active respons
 
 
 ```
-:: Simple script to run Sysinternals Autoruns.
+:: Simple script to run AlienVault OTX PShell script.
 :: The script executes a powershell script and appends output.
 @ECHO OFF
 ECHO.
