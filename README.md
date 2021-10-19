@@ -1,14 +1,5 @@
-# wazuh-domain-stats-alienvault
 **WAZUH AND DOMAIN STATS + ALIENVAULT OTX**
-
-
-[TOC]
-
-
-
 ## 
-
-
 ## Intro
 
 Wazuh and Domain Stats Integration. New, first seen or suspicious domains checked against AlienVault OTX IoCs via Wazuh’s Active Response.
