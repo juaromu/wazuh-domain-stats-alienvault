@@ -195,6 +195,7 @@ Detection Rules for Domain STATS Alerts (“dns_stats.xml”):
     <options>no_full_log</options>
     <group>dnsstat_alert,</group>
   </rule>
+
 <rule id="100012" level="5">
     <if_sid>100010</if_sid>
     <field name="dnsstat.alerts">YOUR-FIRST-CONTACT</field>
@@ -206,6 +207,16 @@ Detection Rules for Domain STATS Alerts (“dns_stats.xml”):
     <group>dnsstat_alert,</group>
   </rule>
 <rule id="100013" level="5">
+      <if_sid>100010</if_sid>
+      <field name="dnsstat.category">NEW</field>
+      <description>DNS Stats - DNS Query to Recently Created Domain</description>
+      <mitre>
+       <id>T1071</id>
+      </mitre>
+      <options>no_full_log</options>
+      <group>dnsstat_alert,</group>
+    </rule>
+<rule id="100014" level="5">
     <if_sid>100010</if_sid>
     <field name="dnsstat.error">\.+</field>
     <description>DNS Stats - Error connecting to API</description>
@@ -213,6 +224,7 @@ Detection Rules for Domain STATS Alerts (“dns_stats.xml”):
     <group>dnsstat_error,</group>
   </rule>
 </group>
+
 ```
 
 
