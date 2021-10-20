@@ -396,7 +396,7 @@ function ApiCall($indicator_type, $param) {
 #Switch For Rule Group From Alert
 $switch_condition = ($INPUT_ARRAY."parameters"."alert"."rule"."groups"[1]).ToString()
 switch -Exact ($switch_condition){
-#If Rule Group = "new_domain", Extract queried hostname and call the API
+#If Rule Group = "dnsstat_alert", Extract queried hostname and call the API
 #Alert example: {"timestamp":"2021-10-20T05:12:39.783+1100","rule":{"level":5,"description":"DNS Stats - New or Low Frequency Domain Detetcted in Query","id":"100010","firedtimes":2,"mail":false,"groups":["dnsstat","dnsstat_alert"]},"agent":{"id":"034","name":"WIN-7FK8M79Q5R6","ip":"192.168.252.105"},"manager":{"name":"tactical"},"id":"1634667159.125787496","decoder":{"name":"json"},"data":{"dnsstat":{"query":"yt3.ggpht.com","alerts":["LOW-FREQ-SCORES"],"category":"ESTABLISHED","freq_score":[4.0377,3.871],"seen_by_isc":"top1m","seen_by_web":"Wed, 16 Jan 2008 18:55:33 GMT","seen_by_you":"Mon, 18 Oct 2021 22:17:34 GMT"},"integration":"dnsstat"},"location":"dns_stats"}
 "dnsstat_alert"
     {
